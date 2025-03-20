@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Document</title>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List (Roman Numerals)</h2>
+    <ol type="I">
+        <li>Apple Juice</li>
+        <li>Orange</li>
+        <li>Mango Fruit</li>
+        <li>Banana</li>
+    </ol>
+
+    <!-- Image from Pexels -->
+    <h2> My Image</h2>
+    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" 
+         alt="Beautiful Landscape pexels-photo" width="200" height="150">
+
+    <!-- Table of 5 Contacts -->
+    <h2>Contact List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Austin John</td>
+                <td>15, Mariamo Close</td>
+                <td>+234816758949</td>
+                <td>austin@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>10, Pardon Street</td>
+                <td>+2342345678654</td>
+                <td>jane@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Robert Brown</td>
+                <td>20, Pipeline Rd</td>
+                <td>+23456789876</td>
+                <td>robert@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>James St</td>
+                <td>+234657908765</td>
+                <td>emily@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Michael Wilson</td>
+                <td>Agor Palace Rd</td>
+                <td>+32456786543</td>
+                <td>michael@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <h4>Enter Your Registration Details</h4>
+    <form action="submit_registration.php" method="POST">
+      
+        
+        <!-- Name Field -->
+       
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        
+
+        <!-- Email Field -->
+       
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+    
+        <!-- Password Field -->
+
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+       <!-- Date of Birth -->
+       
+        <label for="date">Date of Birth:</label>
+        <br>
+        <input type="date" id="date" name="dob" required>
+        <br><br>
+
+       <!-- Dropdown for Country-->
+       
+        <label for="country">Country:</label>
+        <br>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="nigeria">Nigeria</option>
+            <br><br>
+        </select>
+
+
+        <!-- Gender Selection Radio Button-->
+       
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <br>
+        
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br>
+        
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+        <br>
+
+
+        <!-- Checkbox Button Selection-->
+        <p>Interests:</p>
+        <input type="checkbox" id="interest-tech" name="interests" value="technology">
+        <label for="interest-tech">Technology</label>
+        <br>
+
+        <input type="checkbox" id="interest-art" name="interests" value="art">
+        <label for="interest-art">Art</label>
+        <br>
+
+        <input type="checkbox" id="interest-sports" name="interests" value="sports">
+        <label for="interest-sports">Sports</label>
+        <br><br>
+
+
+        <!--Registraion Button-->
+       
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
